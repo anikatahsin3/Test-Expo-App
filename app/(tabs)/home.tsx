@@ -1,9 +1,11 @@
-import { View, Text, Button } from 'react-native'
+import { View, Button } from 'react-native'
 import React from 'react'
 import Header from '../../components/Home/Header'
 import Body from '../../components/Home/Body'
 import { StyleSheet } from 'react-native';
 import { Href, useRouter } from 'expo-router';
+import { GluestackUIProvider, Text, Box } from "@gluestack-ui/themed"
+import { config } from "@gluestack-ui/config"
 
 export default function Home() {
     const router = useRouter();
@@ -27,7 +29,16 @@ export default function Home() {
       </View>
 
       {/* Category  */}
-
+      <View>
+      
+        <GluestackUIProvider config={config}>
+            <Box width="100%" justifyContent="center" alignItems="center">
+                <Text>Open up App.js to start working on your app!</Text>
+            </Box>
+        </GluestackUIProvider>
+      
+      </View>
+       
       {/* Popular Business List */}
     </View>
   )
