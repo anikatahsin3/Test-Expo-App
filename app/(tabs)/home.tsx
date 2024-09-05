@@ -4,7 +4,7 @@ import Header from '../../components/Home/Header'
 import Body from '../../components/Home/Body'
 import { StyleSheet } from 'react-native';
 import { Href, useRouter } from 'expo-router';
-import { GluestackUIProvider, Text, Box } from "@gluestack-ui/themed"
+import { GluestackUIProvider, Text, Box, ProgressFilledTrack, Progress } from "@gluestack-ui/themed"
 import { config } from "@gluestack-ui/config"
 
 export default function Home() {
@@ -30,12 +30,17 @@ export default function Home() {
 
       {/* Category  */}
       <View>
-      
-        <GluestackUIProvider config={config}>
+      <GluestackUIProvider config={config}>
             <Box width="100%" justifyContent="center" alignItems="center">
                 <Text>Open up App.js to start working on your app!</Text>
             </Box>
+            
+        <Progress value={40} className="w-[300px]" size="md"  >
+            <ProgressFilledTrack />
+        </Progress>
+      
         </GluestackUIProvider>
+        
       
       </View>
        
