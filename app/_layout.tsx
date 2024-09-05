@@ -1,9 +1,7 @@
-import { ClerkProvider, ClerkLoaded, SignedIn, SignedOut } from '@clerk/clerk-expo'
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
-import { ActivityIndicator, Text, View } from "react-native";
+import { ActivityIndicator } from "react-native";
 import React from 'react';
-import LoginScreen from '../components/LoginScreen';
 
 
 export default function RootLayout() {
