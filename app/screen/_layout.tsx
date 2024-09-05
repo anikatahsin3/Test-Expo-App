@@ -3,12 +3,12 @@ import React from 'react'
 import Feather from '@expo/vector-icons/Feather';
 import { Colors } from '../../constants/Colors';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Profile from './profile';
-import Home from './home';
+import Hrms from './hrms';
+import Search from './search';
 
 const Tab = createBottomTabNavigator();
 
-export default function TabLayout() {
+export default function ScreenLayout() {
   return (
     
     <Tab.Navigator
@@ -18,22 +18,22 @@ export default function TabLayout() {
       }}
     >
       <Tab.Screen 
-        name="Home" 
-        component={Home}
+        name="HRMS" 
+        component={Hrms}
         options={{
-            tabBarIcon: ({ color, size }) => (
-              <Feather name="home" color={color} size={size} />
-            ),
+            // tabBarIcon: ({ color, size }) => (
+            //   <Feather name="home" color={color} size={size} />
+            // ),
             headerShown: false,
         }}
       />
       <Tab.Screen
-        name="Profile" 
-        component={Profile} 
+        name="Search" 
+        component={Search} 
         options={{
-            tabBarIcon: ({ color, size }) => (
-                <Feather name="user" color={color} size={size} />
-            ),
+            // tabBarIcon: ({ color, size }) => (
+            //     <Feather name="user" color={color} size={size} />
+            // ),
             headerShown: false,
         }}
       />

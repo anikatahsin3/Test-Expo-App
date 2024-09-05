@@ -3,7 +3,6 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import { ActivityIndicator, Text, View } from "react-native";
 import React from 'react';
-import LoginScreen from '../components/LoginScreen';
 
 
 export default function RootLayout() {
@@ -22,6 +21,9 @@ export default function RootLayout() {
         <>
         <Stack>
             <Stack.Screen name="(tabs)" options={{
+                headerShown: false
+            }}/>
+            <Stack.Screen name="(screen)" options={{
                 headerShown: false
             }}/>
         </Stack>

@@ -4,7 +4,7 @@ import Spacer from '../../components/Home/Spacer';
 import BasicInfo from '../../components/Profile/BasicInfo';
 import TestFile from '../../components/Profile/TestFile';
 
-export default function profile() {
+export default function Profile() {
   return (
     <View style = {styles.container}>
         <Spacer height={100}/>

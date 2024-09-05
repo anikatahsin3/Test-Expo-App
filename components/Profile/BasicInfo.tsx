@@ -33,7 +33,7 @@ export default function BasicInfo() {
 
     const fetchData = async () => {
         try {
-          const response = await axios.get('http://10.0.2.2:3000/users', {
+          const response = await axios.get('http://13.233.255.53:3000/users', {
             headers: { Authorization: `Bearer ${token}` },
           });
           const data = response.data;
