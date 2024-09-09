@@ -3,6 +3,7 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import { ActivityIndicator, Text, View } from "react-native";
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 export default function RootLayout() {
@@ -19,11 +20,13 @@ export default function RootLayout() {
 
     return (
         <>
-        <Stack>
-            <Stack.Screen name="(tabs)" options={{
-                headerShown: false
-            }}/>
-        </Stack>
+
+            <Stack>
+                <Stack.Screen name="(tabs)" options={{
+                    headerShown: false
+                }}/>
+            </Stack>
+        
         </>
     );
 }
