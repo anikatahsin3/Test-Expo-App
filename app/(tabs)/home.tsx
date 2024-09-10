@@ -1,8 +1,12 @@
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import React from 'react'
 import { LAYOUT } from './styles/layout'
 import { HOME } from './styles/home'
 import  Card  from './styles/card'
+import Feather from '@expo/vector-icons/Feather';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import Logo from '../../assets/images/home/spotfame'
+
 
 export default function Home() {
   return (
@@ -10,11 +14,13 @@ export default function Home() {
         <View style={LAYOUT.baseStructure}>
             <View style={HOME.container}>
                 <View style={HOME.header}>
-                    <Text>Logo</Text>
-                    <Text>Name</Text>
+                    <Logo/>
+                    <Text style={HOME.company_name}>Name</Text>
                 </View>
                 <View style={HOME.body}>
-                    <Text>Title</Text>
+                    <View style={HOME.title_container}>
+                        <Text style={HOME.title}>Our Modules</Text>
+                    </View>
                     <View style={HOME.card_container}>
                         <View style={HOME.card}>
                             <Card 
@@ -33,8 +39,9 @@ export default function Home() {
                             />
                         </View>
                         <View style={HOME.card}>
+                            {/* <Ionicons name="shirt-outline" size={24} color="black" /> */}
                             <Card 
-                                logo="Card 3" 
+                                logo={<Ionicons name="shirt-outline" size={24} color="black" />} 
                                 title="Merchandizing" 
                                 customStyles={{ 
                                     marginVertical: 6,

@@ -6,25 +6,48 @@ export const HOME = StyleSheet.create({
         flexDirection: 'column',
         width: '100%',
         height: '100%',
-        backgroundColor: 'white'
+        backgroundColor: '#FFFFFF'
     },
     header: {
         display: 'flex',
         flexDirection: 'row',
         width: '100%',
-        backgroundColor: 'blue',
+        // backgroundColor: 'blue',
+        backgroundColor: '#FFFFFF',
+        paddingVertical: 12,
+    },
+    company_name: {
+        color: 'black',
+        fontSize: 20.78,
+        fontWeight: '600',
+        textTransform: 'uppercase',
+        lineHeight: 24.94,
+        wordwrap: 'break-word',
+    },
+    title_container: {
+        marginTop: 29,
+        marginBottom: 18,
+    },
+    title: {
+        color: 'black',
+        fontSize: 24,
+        fontWeight: '600',
+        lineHeight: 28.80,
+        wordwrap: 'break-word',
     },
     body: {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        backgroundColor: 'green'
+        backgroundColor: '#FFFFFF',
+        // backgroundColor: 'green'
     },
     card_container: {
         display: 'flex',
         flexDirection: 'column',
         flexWrap: 'wrap', 
-        backgroundColor: 'yellow'
+        backgroundColor: '#FFFFFF',
+        // backgroundColor: 'yellow'
     },
     card: {
         display: 'flex',
@@ -32,8 +55,9 @@ export const HOME = StyleSheet.create({
         flexWrap: 'wrap',
         width: '100%',
         justifyContent: 'space-between',
-        borderColor: 'black',
-        borderWidth: 2,
-        backgroundColor: 'pink',
+        // borderColor: 'black',
+        // borderWidth: 2,
+        backgroundColor: '#FFFFFF',
+        // backgroundColor: 'pink',
     }
 });
