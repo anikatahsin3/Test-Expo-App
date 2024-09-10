@@ -9,6 +9,6 @@ export const LAYOUT = StyleSheet.create({
       backgroundColor: '#FFFFFF',
     //   backgroundColor: 'red',
       paddingHorizontal: 16,   
-      paddingTop: 17,
+      paddingTop: 50,
     },
 })
