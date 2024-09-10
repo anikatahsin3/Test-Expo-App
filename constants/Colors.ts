@@ -5,7 +5,6 @@
 
 const tintColorLight = '#7F57F1';
 const tintColorDark = '#fff';
-const primaryColor = '#7F57F1';
 
 // Color Pallate
 const darkSlateGray = '#16423C';
@@ -32,8 +31,10 @@ export const Colors = {
     tabIconSelected: tintColorDark,
   },
   DARK_SLATE_GRAY: '#16423C',
-  PRIMARY_COLOR: '#6A9C89',
+  GREEN: '#6A9C89',
   SOFT_GRAY: '#C4DAD2',
   OFF_WHITE: '#E9EFEC',
-  BLACK: 'black'
+  BLACK: 'black',
+
+  PRIMARY_BACKGROUND_COLOR: '#FFFFFF',
 };

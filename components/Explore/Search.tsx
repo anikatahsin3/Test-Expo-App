@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
-import Spacer from '../Home/Spacer';
+import Spacer from '../TestHome/Spacer';
 
 
 export default function Explore() {

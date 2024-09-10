@@ -13,7 +13,7 @@ export default function ScreenLayout() {
     
     <Tab.Navigator
     screenOptions={{
-        tabBarActiveTintColor: Colors.PRIMARY_COLOR,
+        tabBarActiveTintColor: Colors.GREEN,
         tabBarInactiveTintColor: 'gray',
       }}
     >

@@ -1,6 +1,6 @@
 import { View, Text, TextInput, StyleSheet } from 'react-native'
 import React from 'react'
-import Spacer from '../Home/Spacer';
+import Spacer from '../TestHome/Spacer';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Colors } from '../../constants/Colors';
 
@@ -13,7 +13,7 @@ export default function SearchTwo() {
             <View>
                 <Spacer height={100} />
                 <View style = {styles.searchBar}>
-                    <Ionicons name="search" size={24} color={Colors.PRIMARY_COLOR} />
+                    <Ionicons name="search" size={24} color={Colors.GREEN} />
                     <TextInput placeholder='Search...'
                         style = {{
                             fontFamily: 'outfitRegular',

@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 
-import Spacer from '../../components/Home/Spacer';
+import Spacer from '../../components/TestHome/Spacer';
 import { Drawer, DataTable, Badge, Button, ProgressBar, MD3Colors } from 'react-native-paper';
 
 const numberOfItemsPerPageList = [2, 3, 4];

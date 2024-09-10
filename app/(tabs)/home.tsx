@@ -1,57 +1,66 @@
-import { View, Button } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
-import Header from '../../components/Home/Header'
-import Body from '../../components/Home/Body'
-import { StyleSheet } from 'react-native';
-import { Href, useRouter } from 'expo-router';
-import { GluestackUIProvider, Text, Box, ProgressFilledTrack, Progress } from "@gluestack-ui/themed"
-import { config } from "@gluestack-ui/config"
+import { LAYOUT } from './styles/layout'
+import { HOME } from './styles/home'
+import  Card  from './styles/card'
 
 export default function Home() {
-    const router = useRouter();
   return (
-    <View style={styles.container}>
-      {/* Header */}
-      <Header/>
-
-      {/* Body */}
-      <Body/>
-
-      {/* Slider */}
-      <View>
-        <Button
-            title="Go to Details"
-            onPress={() => {
-            // Navigates to the details screen in newScreens folder
-            router.push('screen/hrms' as Href);
-            }}
-        />
-      </View>
-
-      {/* Category  */}
-      <View>
-      <GluestackUIProvider config={config}>
-            <Box width="100%" justifyContent="center" alignItems="center">
-                <Text>Open up App.js to start working on your app!</Text>
-            </Box>
-            
-        <Progress value={40} className="w-[300px]" size="md"  >
-            <ProgressFilledTrack />
-        </Progress>
-      
-        </GluestackUIProvider>
-        
-      
-      </View>
-       
-      {/* Popular Business List */}
-    </View>
+    <>
+        <View style={LAYOUT.baseStructure}>
+            <View style={HOME.container}>
+                <View style={HOME.header}>
+                    <Text>Logo</Text>
+                    <Text>Name</Text>
+                </View>
+                <View style={HOME.body}>
+                    <Text>Title</Text>
+                    <View style={HOME.card_container}>
+                        <View style={HOME.card}>
+                            <Card 
+                                logo="Card 1" 
+                                title="Admin & HRMS"
+                                customStyles={{ 
+                                    marginVertical: 6,
+                                }} 
+                            />
+                            <Card 
+                                logo="Card 2" 
+                                title="Accounting"
+                                customStyles={{ 
+                                    marginVertical: 6,
+                                }} 
+                            />
+                        </View>
+                        <View style={HOME.card}>
+                            <Card 
+                                logo="Card 3" 
+                                title="Merchandizing" 
+                                customStyles={{ 
+                                    marginVertical: 6,
+                                }} 
+                            />
+                            <Card 
+                                logo="Card 4" 
+                                title="Inventory" 
+                                customStyles={{ 
+                                    marginVertical: 6,
+                                }} 
+                            />
+                        </View>
+                        <View style={HOME.card}>
+                            <Card 
+                                logo="Card 5" 
+                                title="Commercial" 
+                                customStyles={{ 
+                                    marginVertical: 6,
+                                }} 
+                            />
+                        </View>
+                    </View>
+                </View>
+            </View>
+        </View>
+    </>
   )
 }
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#E9F4EE',
-    }
-});

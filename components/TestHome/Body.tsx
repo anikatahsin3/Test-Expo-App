@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     },
     box: {
         borderWidth: 1,
-        borderColor: Colors.PRIMARY_COLOR,  
+        borderColor: Colors.GREEN,  
         borderRadius: 10,    
         width: '100%',           
         height: 100,         
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.SOFT_GRAY  
     },
     text: {
-        color: Colors.PRIMARY_COLOR, 
+        color: Colors.GREEN, 
         fontSize: 16,
         fontFamily: 'sevillana'
     },
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     headerText: {
-        color: Colors.PRIMARY_COLOR,  
+        color: Colors.GREEN,  
         fontSize: 30,  
         fontFamily: 'sevillana'
     }
