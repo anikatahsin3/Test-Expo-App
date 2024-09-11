@@ -15,5 +15,5 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
     "app/_layout.tsx"
-, "assets/images/home/home-09.jsx"  ]
+, "assets/images/home/home-09.jsx", "app/screens/admin_hrms/OtMonitoring.tsx"  ]
 }

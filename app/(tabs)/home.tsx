@@ -1,14 +1,15 @@
-import { View, Text, Image } from 'react-native'
 import React from 'react'
+import { View, Text } from 'react-native'
 import { LAYOUT } from './styles/layout'
 import { HOME } from './styles/home'
 import  Card  from './styles/card'
-import Feather from '@expo/vector-icons/Feather';
-import Ionicons from '@expo/vector-icons/Ionicons';
 import icon from '../../assets/images/home/svg'
+import { useRouter } from "expo-router";
 
 
 export default function Home() {
+    const router = useRouter();
+
   return (
     <>
         <View style={LAYOUT.baseStructure}>
@@ -29,13 +30,15 @@ export default function Home() {
                                 customStyles={{ 
                                     marginVertical: 6,
                                 }} 
+                                onPress={() => router.push("/screens/admin_hrms/OtMonitoring")} 
                             />
                             <Card 
                                 logo={<icon.COMPUTER_DOLLAR/>}
                                 title="Accounting"
                                 customStyles={{ 
                                     marginVertical: 6,
-                                }} 
+                                }}
+                                onPress={() => router.push("/screens/accounting/base")} 
                             />
                         </View>
                         <View style={HOME.card}>
@@ -46,6 +49,7 @@ export default function Home() {
                                 customStyles={{ 
                                     marginVertical: 6,
                                 }} 
+                                onPress={() => router.push("/screens/merchandizing/base")} 
                             />
                             <Card 
                                 logo={<icon.DASHBOARD_BROWSING/>} 
@@ -53,6 +57,7 @@ export default function Home() {
                                 customStyles={{ 
                                     marginVertical: 6,
                                 }} 
+                                onPress={() => router.push("/screens/inventory/base")} 
                             />
                         </View>
                         <View style={HOME.card}>
@@ -61,7 +66,8 @@ export default function Home() {
                                 title="Commercial" 
                                 customStyles={{ 
                                     marginVertical: 6,
-                                }} 
+                                }}
+                                onPress={() => router.push("/screens/commercial/base")} 
                             />
                         </View>
                     </View>

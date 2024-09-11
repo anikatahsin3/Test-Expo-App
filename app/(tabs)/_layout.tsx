@@ -15,11 +15,9 @@ export default function TabLayout() {
         <Tab.Navigator
                 shifting={true}
                 labeled={true}
-                // activeColor='#007AFF'
-                // inactiveColor='#000000'
                 barStyle={{
                     backgroundColor: 'rgba(255, 255, 255, 0.75)',
-                    // height: 60,
+
                   }}    
             >
             <Tab.Screen 

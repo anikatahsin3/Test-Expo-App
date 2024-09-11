@@ -1,15 +1,15 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-export default function Card({ logo, title, customStyles = {}   }) {
+export default function Card({ logo, title, customStyles = {}, onPress }) {
     return (
-      <View style={[styles.card, customStyles]}>
+      <TouchableOpacity style={[styles.card, customStyles]} onPress={onPress}>
         <View style={styles.logoContainer}>
-        {React.isValidElement(logo) ? logo : <Text>{logo}</Text>}
+            {React.isValidElement(logo) ? logo : <Text>{logo}</Text>}
         </View>
         <Text style={styles.cardTitle}>{title}</Text>
-      </View>
+      </TouchableOpacity>
     );
 }
 
